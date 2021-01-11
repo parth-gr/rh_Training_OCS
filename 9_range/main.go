@@ -13,7 +13,7 @@ func main() {
 
 	//not using index
 
-	for _, id := range arr { //using _ if not used
+	for _, id := range arr { //using _ if i not used
 		fmt.Printf("ID : %d\n", id)
 	}
 	var sum = 0
