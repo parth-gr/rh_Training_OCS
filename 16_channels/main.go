@@ -33,5 +33,5 @@ func count(thing string, c chan string) {
 		time.Sleep(time.Millisecond * 500)
 	}
 
-	close(c) //sender must close it
+	close(c) //sender must only close it
 }

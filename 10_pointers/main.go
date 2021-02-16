@@ -23,4 +23,7 @@ func main() {
 	//passing ptrs while big data is there then performance is increased
 	//only pass by value exists
 
+	// p := new(int)
+	// *p =100
+
 }

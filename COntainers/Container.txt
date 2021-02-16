@@ -1,0 +1,31 @@
+
+//run docker file
+//  docker build -t RH_PROJECT .
+// docker image ls
+//  docker run -p 4000:4000 -tid rh_project
+
+
+code :
+FROM golang:latest
+
+RUN mkdir /app
+COPY . /app
+WORKDIR /app
+RUN go get -d -v ./...
+RUN go install -v ./...
+CMD  ["go","run","../app/startServer/main.go"]
+
+
+
+Run :
+By build container through Docker Image.
+#### Run Docker Daemon is running  `systemctl start docker`
+### `docker pull partharora1010/my-golang-app:v1.0.0`
+ 
+### i)Running in non detached mode
+### `sudo docker run -p 5000:5000 -it --rm --name my-runing-app partharora1010/my-golang-app:v1.0.0`
+#### Open LocalHost port 5000 or 5001
+
+### ii)Running in the detached mode
+### `docker run -p 5000:5000 -tid  partharora1010/my-golang-app:v1.0.0`
+#### Open LocalHost port 5000 or 5001

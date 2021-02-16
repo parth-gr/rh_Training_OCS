@@ -22,6 +22,8 @@ func main() {
 
 	fruitSlice := []string{"Apple", "orange"}
 
+	///new declearation   fruitslice := make([]int,5,10)  //5 values 0 and size =10  and also fruit : =append(fruit , 0 ,-1) for the remain values 
+
 	fmt.Println(fruitSlice, len(fruitSlice), fruitSlice[1:2])
 	//count length of slice
 

@@ -14,7 +14,7 @@ type Person struct {
 	gender    string
 	age       int
 	// or firstname lastname string
-	//age int
+	//age intr
 }
 
 //function pass by value,greeting method(value reciever)
